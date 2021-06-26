@@ -9,9 +9,6 @@ namespace DesignPatterns.TheStrategyPattern.ActionAdventureGame.Characters
 {
     class Queen : Character
     {
-        public Queen()
-        {
-            setWeapon(new NoWeapon());
-        }
+        
     }
 }

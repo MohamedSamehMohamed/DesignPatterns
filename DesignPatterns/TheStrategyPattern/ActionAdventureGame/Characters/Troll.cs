@@ -9,9 +9,5 @@ namespace DesignPatterns.TheStrategyPattern.ActionAdventureGame.Characters
 {
     class Troll : Character
     {
-        public Troll()
-        {
-            setWeapon(new NoWeapon());
-        }
     }
 }

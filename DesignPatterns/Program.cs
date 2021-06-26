@@ -11,6 +11,8 @@ namespace DesignPatterns
             King obj = new King();
             obj.Fight();
             obj.setWeapon(new SwordBehavior());
+            obj.Fight();
+            obj.setWeapon(new AxeBehavior());
             obj.Fight(); 
         }
     }

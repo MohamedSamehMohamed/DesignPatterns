@@ -9,9 +9,6 @@ namespace DesignPatterns.TheStrategyPattern.ActionAdventureGame.Characters
 {
     class King : Character
     {
-        public King()
-        {
-            setWeapon(new NoWeapon());
-        }
+        
     }
 }
