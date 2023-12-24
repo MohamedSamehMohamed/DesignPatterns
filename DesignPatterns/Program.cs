@@ -1,19 +1,34 @@
 ﻿using System;
-using DesignPatterns.TheStrategyPattern.ActionAdventureGame.Characters;
-using DesignPatterns.TheStrategyPattern.ActionAdventureGame.WeaponsClasses;
-
-namespace DesignPatterns
+using DesignPatterns.Chapter1;
+namespace DesignPatterns;
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            King obj = new King();
-            obj.Fight();
-            obj.setWeapon(new SwordBehavior());
-            obj.Fight();
-            obj.setWeapon(new AxeBehavior());
-            obj.Fight(); 
-        }
+        TestDuckClass();
     }
+
+    private static void TestDuckClass()
+    {
+        var redHeadDuck = new RedHeadDuck();
+        var mallardDuck = new MallardDuck();
+        
+        redHeadDuck.Display();
+        mallardDuck.Display();
+        Console.WriteLine();
+        
+        redHeadDuck.Swim();
+        mallardDuck.Swim();
+        Console.WriteLine();
+        
+        redHeadDuck.Fly();
+        mallardDuck.Fly();
+        Console.WriteLine();
+        
+        redHeadDuck.Quack();
+        mallardDuck.Quack();
+        Console.WriteLine();
+    }
+    
 }
+
