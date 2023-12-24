@@ -1,5 +1,7 @@
 ﻿using System;
 using DesignPatterns.Chapter1;
+using DesignPatterns.Chapter1.FlyBehavior;
+
 namespace DesignPatterns;
 class Program
 {
@@ -28,6 +30,10 @@ class Program
         redHeadDuck.Quack();
         mallardDuck.Quack();
         Console.WriteLine();
+        
+        Console.WriteLine("change fly behavior");
+        redHeadDuck.SetFlyBehaviour(new FlyWithWings());
+        redHeadDuck.Fly();
     }
     
 }

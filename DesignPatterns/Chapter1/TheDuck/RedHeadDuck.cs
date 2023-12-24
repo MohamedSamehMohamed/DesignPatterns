@@ -11,10 +11,6 @@ public class RedHeadDuck: Duck
         _flyBehaviour = new FlyNoWay();
         _quackBehavior = new MuteQuack();
     }
-    public override void Swim()
-    {
-        Console.WriteLine("red head duck swim");
-    }
 
     public override void Display()
     {

@@ -11,10 +11,6 @@ public class MallardDuck: Duck
         _flyBehaviour = new FlyWithWings();
         _quackBehavior = new SimpleQuack();
     }
-    public override void Swim()
-    {
-        Console.WriteLine("mallard duck swim");
-    }
 
     public override void Display()
     {

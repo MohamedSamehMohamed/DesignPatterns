@@ -1,3 +1,5 @@
+using System;
+
 namespace DesignPatterns.Chapter1;
 public abstract class Duck
 {
@@ -12,6 +14,20 @@ public abstract class Duck
     {
         _quackBehavior.Quack();
     }
-    public abstract void  Swim();
+
+    public void Swim()
+    {
+        Console.WriteLine("swim");
+    }
+
+    public void SetFlyBehaviour(IFly flyBehaviour)
+    {
+        _flyBehaviour = flyBehaviour;
+    }
+
+    public void SetQuackBehavior(IQuack quackBehaviour)
+    {
+        _quackBehavior = quackBehaviour;
+    }
     public abstract void Display();
 }
