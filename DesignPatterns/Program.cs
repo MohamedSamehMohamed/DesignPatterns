@@ -1,15 +1,24 @@
 ﻿using System;
 using DesignPatterns.Chapter1;
 using DesignPatterns.Chapter1.FlyBehavior;
+using DesignPatterns.Chapter2;
 
 namespace DesignPatterns;
 class Program
 {
     static void Main(string[] args)
     {
-        TestDuckClass();
+        TestObserverPattern();
     }
 
+    private static void TestObserverPattern()
+    {
+        ISubject subject = new Subject();
+        IObserver observer = new Observer();
+        subject.AddObserver(observer);
+        subject.UpdateSubjectData(new SubjectData("1", "2"));
+        ((IDisplay)observer).Display();
+    }
     private static void TestDuckClass()
     {
         var redHeadDuck = new RedHeadDuck();
