@@ -2,15 +2,26 @@
 using DesignPatterns.Chapter1;
 using DesignPatterns.Chapter1.FlyBehavior;
 using DesignPatterns.Chapter2;
+using DesignPatterns.Chapter3;
 
 namespace DesignPatterns;
 class Program
 {
     static void Main(string[] args)
     {
-        TestObserverPattern();
+        TestDecoratePattern();
     }
 
+    private static void TestDecoratePattern()
+    {
+        var espresso = new Espresso();
+        var decaf = new Decaf();
+        espresso.AddCondiment(new Soy(2.3));
+        espresso.AddCondiment(new Milk(2.3));
+        decaf.AddCondiment(new Sugar(5));
+        Console.WriteLine(espresso.GetDescription() + " " + espresso.Cost());
+        Console.WriteLine(decaf.GetDescription() + " " + decaf.Cost());
+    }
     private static void TestObserverPattern()
     {
         ISubject subject = new Subject();
