@@ -14,10 +14,10 @@ class Program
     private static void TestObserverPattern()
     {
         ISubject subject = new Subject();
-        IObserver observer = new Observer();
+        var observer = new Observer();
         subject.AddObserver(observer);
         subject.UpdateSubjectData(new SubjectData("1", "2"));
-        ((IDisplay)observer).Display();
+        observer.Display();
     }
     private static void TestDuckClass()
     {
