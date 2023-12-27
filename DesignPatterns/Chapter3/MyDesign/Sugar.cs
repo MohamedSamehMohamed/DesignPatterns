@@ -1,4 +1,4 @@
-namespace DesignPatterns.Chapter3;
+namespace DesignPatterns.Chapter3.MyDesign;
 
 public class Sugar: Condiment
 {

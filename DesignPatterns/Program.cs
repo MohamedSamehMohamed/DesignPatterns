@@ -2,17 +2,20 @@
 using DesignPatterns.Chapter1;
 using DesignPatterns.Chapter1.FlyBehavior;
 using DesignPatterns.Chapter2;
-using DesignPatterns.Chapter3;
-
+using DesignPatterns.Chapter3.BookDesign.Test;
+using DesignPatterns.Chapter3.MyDesign;
 namespace DesignPatterns;
 class Program
 {
     static void Main(string[] args)
     {
-        TestDecoratePattern();
+        TestDecoratePatternBookDesign();
     }
-
-    private static void TestDecoratePattern()
+    private static void TestDecoratePatternBookDesign()
+    {
+        Test.TestBookDesign();
+    }
+    private static void TestDecoratePatternMyDesign()
     {
         var espresso = new Espresso();
         var decaf = new Decaf();

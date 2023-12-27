@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace DesignPatterns.Chapter3;
+namespace DesignPatterns.Chapter3.MyDesign;
 
 public abstract class Beverage
 {
