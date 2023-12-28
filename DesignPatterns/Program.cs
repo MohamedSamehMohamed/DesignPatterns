@@ -4,12 +4,19 @@ using DesignPatterns.Chapter1.FlyBehavior;
 using DesignPatterns.Chapter2;
 using DesignPatterns.Chapter3.BookDesign.Test;
 using DesignPatterns.Chapter3.MyDesign;
+using DesignPatterns.Chapter4;
+
 namespace DesignPatterns;
 class Program
 {
     static void Main(string[] args)
     {
-        TestDecoratePatternBookDesign();
+        TestFactoryPattern();
+    }
+
+    private static void TestFactoryPattern()
+    {
+        Testing.Test();
     }
     private static void TestDecoratePatternBookDesign()
     {
